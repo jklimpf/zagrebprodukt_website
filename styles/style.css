@@ -1,0 +1,174 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* Set minimum height for main content */
+main {
+  min-height: calc(100vh - 250px); /* 100vh - height of header */
+  max-width: auto;
+  width: auto;
+  margin: 0 auto;
+}
+
+/* Style header */
+header {
+  height: 100px;
+  background-color: white;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 1500px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 350px;
+}
+
+/* Style navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 20px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+  border-bottom: 2px solid #333; /* Add a line under the link text */
+}
+
+/* Style main content */
+section {
+  text-align: center;
+}
+
+/* Style footer */
+footer {
+  height: 150px;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.1s ease-in-out;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #d9d7d7;
+  color: #333;
+  /* transition: background-color color 0.2s; */
+}
+
+.contactDiv {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 30px;
+  gap: 70px;
+}
+
+.contactDiv div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 8px;
+  color: #333;
+}
+
+/* Define the styles for the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+/* Define the hover styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+/* Define the active styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb:active {
+  background-color: #666;
+}
+
+@media (max-width: 1750px) {
+  footer {
+    height: 300px;
+  }
+  .contactDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 80px;
+    justify-items: start;
+  }
+}
+
+@media (max-width: 1000px) {
+  footer {
+    height: 300px;
+  }
+  .contactDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    height: 300px;
+  }
+  .contactDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

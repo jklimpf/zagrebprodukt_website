@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <script
+      defer
+      src="https://kit.fontawesome.com/fca27377da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="/assets/img/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="services.html">Djelatnosti</a></li>
+          <li><a href="contact.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="firstSection">
+        <form method="post" action="">
+          <label for="name">Ime:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Naslov:</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Poruka:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <input type="submit" value="Pošalji" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="contactDiv">
+        <div>
+          <a href="mailto:zagrebprodukt@zagrebprodukt.hr">
+            <i class="fas fa-envelope fa-2x"></i>
+            <p>zagrebprodukt@zagrebprodukt.hr</p></a
+          >
+        </div>
+        <div>
+          <a href="tel:+38516685211">
+            <i class="fas fa-phone fa-2x"></i>
+            <p>+385 1 6685211</p></a
+          >
+        </div>
+        <div>
+          <a href="tel:+38516601128">
+            <i class="fas fa-phone fa-2x"></i>
+            <p>+385 1 6601128</p></a
+          >
+        </div>
+        <div>
+          <a href="tel:+38516601696">
+            <i class="fas fa-fax fa-2x"></i>
+            <p>+385 1 6601696</p></a
+          >
+        </div>
+        <div>
+          <a href="tel:+38598411760">
+            <i class="fas fa-mobile fa-2x"></i>
+            <p>+385 98 411 760</p></a
+          >
+        </div>
+        <div>
+          <a href="geo:45.774095, 16.001004">
+            <i class="fas fa-map-marker fa-2x"></i>
+            <p>Šišićeva 18, 10010 Zagreb</p></a
+          >
+        </div>
+      </div>
+      <p>&copy; 2023 Zagrebprodukt</p>
+    </footer>
+  </body>
+</html>

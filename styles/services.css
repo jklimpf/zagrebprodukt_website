@@ -1,0 +1,65 @@
+#firstSection {
+  background-color: rgba(51, 51, 51, 0.8);
+  height: auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.serviceCard {
+  background-color: oldlace;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-modal {
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+}
+
+#services-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#services-list li {
+  margin-bottom: 10px;
+}
+
+#services-list .service-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}

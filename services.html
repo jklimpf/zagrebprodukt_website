@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Services</title>
+    <script
+      defer
+      src="https://kit.fontawesome.com/fca27377da.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="scripts/services.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="/assets/img/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="services.html" class="active">Djelatnosti</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="firstSection">
+        <div id="services-list">
+          <ul>
+            <li>
+              <div class="serviceCard">
+                <h3>Metal</h3>
+                <a href="#metals" class="button service-link">Detalji</a>
+              </div>
+            </li>
+            <li>
+              <a href="#service2" class="service-link"> Service 2 </a>
+            </li>
+            <li>
+              <a href="#service3" class="service-link"> Service 3 </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="metals" class="modal">
+          <div class="modal-content">
+            <h2>Metal</h2>
+            <p>metal opis</p>
+            <a href="#" class="close-modal">Close</a>
+          </div>
+        </div>
+
+        <div id="service2" class="modal">
+          <div class="modal-content">
+            <h2>Service 2</h2>
+            <p>Description of service 2.</p>
+            <a href="#" class="close-modal">Close</a>
+          </div>
+        </div>
+
+        <div id="service3" class="modal">
+          <div class="modal-content">
+            <h2>Service 3</h2>
+            <p>Description of service 3.</p>
+            <a href="#" class="close-modal">Close</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="contactDiv">
+        <div>
+          <a href="mailto:zagrebprodukt@zagrebprodukt.hr">
+            <i class="fas fa-envelope fa-2x"></i>
+            <p>zagrebprodukt@zagrebprodukt.hr</p></a
+          >
+        </div>
+        <div>
+          <a href="tel:+38516685211">
+            <i class="fas fa-phone fa-2x"></i>
+            <p>+385 1 6685211</p></a
+          >
+        </div>
+        <div>
+          <a href="tel:+38516601128">
+            <i class="fas fa-phone fa-2x"></i>
+            <p>+385 1 6601128</p></a
+          >
+        </div>
+        <div>
+          <a href="tel:+38516601696">
+            <i class="fas fa-fax fa-2x"></i>
+            <p>+385 1 6601696</p></a
+          >
+        </div>
+        <div>
+          <a href="tel:+38598411760">
+            <i class="fas fa-mobile fa-2x"></i>
+            <p>+385 98 411 760</p></a
+          >
+        </div>
+        <div>
+          <a href="geo:45.774095, 16.001004">
+            <i class="fas fa-map-marker fa-2x"></i>
+            <p>Šišićeva 18, 10010 Zagreb</p></a
+          >
+        </div>
+      </div>
+      <p>&copy; 2023 Zagrebprodukt</p>
+    </footer>
+  </body>
+</html>
