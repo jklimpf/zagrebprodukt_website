@@ -1,5 +1,6 @@
 #firstSection {
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: #333;
+
   height: auto;
   padding: 100px 0;
   display: flex;
@@ -8,11 +9,53 @@
 }
 
 .serviceCard {
-  background-color: oldlace;
+  background-color: rgba(194, 194, 194, 0.8);
+  width: 1500px;
+  height: 150px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 40px;
   gap: 20px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.serviceCard img {
+  width: 220px;
+  height: 130px;
+}
+/* .serviceCard h2 {
+  text-decoration: underline;
+} */
+.serviceCard ul {
+  text-align: left;
+  line-height: 0.5;
+}
+.serviceCard ul li {
+  font-size: 13px;
+  list-style: outside;
+  line-height: 13px;
+  margin: -8px 0;
+}
+.serviceCard ul p {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.serviceTitleContainer {
+  width: 300px;
+  text-align: left;
+  position: absolute;
+  left: 400px;
+}
+
+.serviceDescription {
+  width: 350px;
+  margin-left: 500px;
+
+  /* left: 350px; */
 }
 
 .modal {
@@ -34,13 +77,20 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  padding: 20px;
+  padding: 20px 0px 20px 20px;
+
   border-radius: 5px;
 }
 
 .modal.active {
   opacity: 1;
   visibility: visible;
+}
+
+.modal-container {
+  width: 1000px;
+  height: 700px;
+  overflow-y: auto;
 }
 
 .close-modal {
