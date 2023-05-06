@@ -13,7 +13,7 @@ serviceLinks.forEach((link) => {
   });
 });
 
-const closeModalButtons = document.querySelectorAll(".close-modal");
+const closeModalButtons = document.querySelectorAll(".close-service-modal");
 
 closeModalButtons.forEach((button) => {
   button.addEventListener("click", () => {

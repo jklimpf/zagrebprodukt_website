@@ -66,7 +66,12 @@ nav ul li a.active,
 nav ul li a:hover {
   background-color: #fff;
   color: #333;
-  border-bottom: 2px solid #333; /* Add a line under the link text */
+  border-bottom: 2px solid #333;
+}
+
+.mobileNavModal-content ul li a.active,
+.mobileNavModal-content ul li a:hover {
+  border-bottom: 2px solid white;
 }
 
 /* Style main content */
@@ -152,12 +157,15 @@ footer {
   font-size: 20px;
   text-decoration: none;
   color: white;
-  padding: 20px;
 }
 
 .mobileNavActive {
   opacity: 1;
   visibility: visible;
+}
+
+.disableBodyScroll {
+  overflow-y: hidden;
 }
 
 /* Define the styles for the scrollbar */
@@ -196,17 +204,6 @@ footer {
   }
 }
 
-@media (max-width: 1000px) {
-  footer {
-    height: 300px;
-  }
-  .contactDiv {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-}
-
 @media (max-width: 600px) {
   footer {
     height: 400px;
@@ -234,56 +231,6 @@ footer {
   background-color: #333;
 }
 
-/* Show menu when hamburger is clicked */
-@media (max-width: 1000px) {
-  .menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 80px 0 0 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    overflow-y: auto;
-  }
-
-  .menu li {
-    margin-bottom: 20px;
-  }
-
-  .menu a {
-    color: #333;
-    font-size: 24px;
-  }
-
-  .menu-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-
-  /* Show hamburger icon and menu when viewport is small */
-  .menu-open .hamburger {
-    display: block;
-  }
-
-  .menu-open .menu {
-    display: block;
-  }
-
-  .menu-open .menu-overlay {
-    display: block;
-  }
-}
-
 /* Show menu horizontally when viewport is large */
 @media (max-width: 1000px) {
   .menu {
@@ -305,7 +252,7 @@ footer {
   }
 
   header {
-    height: 60px;
+    height: 50px;
   }
 
   .mobileHeader {

@@ -126,8 +126,13 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .membershipDetailsCardsContainer {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .membershipCard {
+    width: 180px;
+    height: 200px;
   }
 }

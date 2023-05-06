@@ -92,10 +92,11 @@
   overflow-y: auto;
 }
 
-.close-modal {
-  display: block;
-  margin-top: 20px;
-  text-align: right;
+.close-service-modal {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  color: #333;
 }
 
 #services-list ul {
@@ -111,4 +112,193 @@
   color: blue;
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+  .serviceCard {
+    width: 1100px;
+  }
+
+  .serviceCard h2 {
+    font-size: 19px;
+  }
+
+  .serviceTitleContainer {
+    width: 200px;
+    text-align: left;
+    position: absolute;
+    left: 400px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .serviceCard {
+    width: 900px;
+  }
+
+  .serviceCard h2 {
+    font-size: 17px;
+  }
+
+  .serviceTitleContainer {
+    width: 200px;
+    text-align: left;
+    position: absolute;
+    left: 300px;
+  }
+
+  .serviceDescription {
+    width: 300px;
+    margin-left: 230px;
+  }
+}
+
+@media (max-width: 950px) {
+  .serviceCard {
+    width: 700px;
+  }
+  .serviceCard img {
+    width: 160px;
+    height: 90px;
+  }
+
+  .serviceCard h2 {
+    font-size: 16px;
+  }
+
+  .serviceTitleContainer {
+    width: 150px;
+    text-align: left;
+    position: absolute;
+    left: 230px;
+  }
+
+  .serviceDescription {
+    width: 300px;
+    margin-left: 180px;
+  }
+
+  .serviceCard ul li {
+    font-size: 11px;
+  }
+  .serviceCard ul p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 730px) {
+  .serviceCard {
+    width: 500px;
+    padding-left: 20px;
+  }
+  .serviceCard img {
+    width: 120px;
+    height: 60px;
+  }
+
+  .serviceCard h2 {
+    font-size: 15px;
+  }
+
+  .serviceTitleContainer {
+    width: 130px;
+    text-align: left;
+    position: absolute;
+    left: 150px;
+  }
+
+  .serviceDescription {
+    width: 300px;
+    margin-left: 140px;
+  }
+
+  .serviceCard ul li {
+    font-size: 9px;
+    line-height: 9px;
+  }
+  .serviceCard ul p {
+    font-size: 10px;
+    line-height: normal;
+    position: absolute;
+    top: 1%;
+  }
+}
+
+@media (max-width: 600px) {
+  .serviceCard {
+    background-color: rgba(194, 194, 194, 0.8);
+    width: 300px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .serviceCard img {
+    display: none;
+  }
+  .serviceCard h2 {
+    font-size: 15px;
+  }
+  .serviceCard ul {
+    text-align: left;
+    line-height: 0.5;
+  }
+  .serviceCard ul li {
+    font-size: 13px;
+    list-style: outside;
+    line-height: 13px;
+    margin: -8px 0;
+  }
+  .serviceCard ul p {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .serviceTitleContainer {
+    width: 100px;
+    position: relative;
+    text-align: center;
+    left: auto;
+  }
+
+  .serviceDescription {
+    width: auto;
+    margin-left: 0;
+    margin: auto;
+
+    /* left: 350px; */
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 0px 20px 20px;
+    border-radius: 5px;
+    overflow-y: hidden;
+    z-index: 1000;
+    width: 85%;
+    height: 80%;
+  }
+
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-container {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }
