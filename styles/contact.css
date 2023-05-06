@@ -53,8 +53,25 @@ input[type="submit"]:hover {
   background-color: #3e8e41;
 }
 
-@media (max-width: 600px) {
-  footer {
-    background-color: #3e8e41;
+/* 
+.hamburger {
+  display: none;
+} */
+
+@media (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .hamburger {
+    display: inline;
   }
 }
