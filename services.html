@@ -151,7 +151,12 @@
                     <li>Rudarstvo</li>
                   </ul>
                 </div>
-                <a href="#pumpe" class="button service-link">Detalji</a>
+                <div class="serviceButtonContainer">
+                  <a href="#pumpe" class="button service-link">Detalji</a>
+                  <a href="#galerijaPumpe" class="button service-link"
+                    >Galerija</a
+                  >
+                </div>
               </div>
             </li>
             <li>
@@ -362,6 +367,54 @@
                 necessitatibus saepe natus earum? Tempora illum temporibus
                 quisquam non a excepturi debitis illo dolor!
               </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="galerijaPumpe" class="modal">
+          <div class="modal-content-images">
+            <!-- Slideshow container -->
+            <div class="slideshow-container fade">
+              <!-- Full images with numbers and message Info -->
+              <div class="Containers">
+                <img
+                  src="assets/img/serviceImages/pumpa_1.jpg"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="Containers">
+                <img
+                  src="assets/img/serviceImages/pumpa_2.jpg"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="Containers">
+                <img
+                  src="assets/img/serviceImages/pumpa_3.jpg"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="Containers">
+                <img
+                  src="assets/img/serviceImages/pumpa_4.jpg"
+                  style="width: 100%"
+                />
+              </div>
+
+              <!-- Back and forward buttons -->
+              <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br />
+
+            <!-- The circles/dots -->
+            <div style="text-align: center">
+              <span class="dots" onclick="currentSlide(1)"></span>
+              <span class="dots" onclick="currentSlide(2)"></span>
+              <span class="dots" onclick="currentSlide(3)"></span>
+              <span class="dots" onclick="currentSlide(4)"></span>
             </div>
           </div>
         </div>
