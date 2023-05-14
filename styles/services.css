@@ -22,7 +22,7 @@
 }
 
 .serviceCard img {
-  width: 220px;
+  width: 200px;
   height: 130px;
   border-radius: 10px;
 }
@@ -270,7 +270,7 @@
   }
 
   .serviceCard img {
-    width: 220px;
+    width: 170px;
     height: 130px;
   }
 }
@@ -285,10 +285,10 @@
   }
 
   .serviceTitleContainer {
-    width: 200px;
+    width: 180px;
     text-align: left;
     position: absolute;
-    left: 300px;
+    left: 250px;
   }
 
   .serviceDescription {
@@ -302,19 +302,28 @@
     width: 700px;
   }
   .serviceCard img {
-    width: 160px;
+    width: 120px;
     height: 90px;
   }
 
   .serviceCard h2 {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .serviceTitleContainer {
     width: 150px;
     text-align: left;
     position: absolute;
-    left: 230px;
+    left: 190px;
+  }
+
+  .button {
+    width: 60px;
+    height: 26px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .serviceDescription {
@@ -323,10 +332,11 @@
   }
 
   .serviceCard ul li {
-    font-size: 11px;
+    font-size: 9px;
   }
   .serviceCard ul p {
-    font-size: 13px;
+    font-size: 11px;
+    margin-bottom: 5%;
   }
 }
 
@@ -341,7 +351,16 @@
   }
 
   .serviceCard h2 {
-    font-size: 15px;
+    font-size: 11px;
+  }
+
+  .button {
+    width: 70px;
+    height: 30px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .serviceTitleContainer {
@@ -352,19 +371,19 @@
   }
 
   .serviceDescription {
-    width: 300px;
-    margin-left: 140px;
+    width: 200px;
+    margin-left: 120px;
   }
 
   .serviceCard ul li {
-    font-size: 9px;
+    font-size: 8px;
     line-height: 9px;
   }
   .serviceCard ul p {
-    font-size: 10px;
+    font-size: 8px;
     line-height: normal;
     position: absolute;
-    top: 1%;
+    top: 15%;
   }
 }
 
@@ -386,38 +405,51 @@
   .serviceCard img {
     display: none;
   }
+
+  .serviceTitleContainer {
+    width: auto;
+    text-align: center;
+    position: relative;
+    left: auto;
+  }
+
+  .button {
+    width: 100px;
+    height: 20px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .serviceButtonContainer {
+    flex-direction: row;
+  }
+
   .serviceCard h2 {
-    font-size: 15px;
+    font-size: 14px;
+    text-align: center;
   }
   .serviceCard ul {
     text-align: left;
     line-height: 0.5;
+    margin-left: 20px;
   }
   .serviceCard ul li {
-    font-size: 13px;
+    font-size: 11px;
     list-style: outside;
     line-height: 13px;
     margin: -8px 0;
   }
   .serviceCard ul p {
     margin-bottom: 12px;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: bold;
   }
 
-  .serviceTitleContainer {
-    width: 100px;
-    position: relative;
-    text-align: center;
-    left: auto;
-  }
-
   .serviceDescription {
-    width: auto;
-    margin-left: 0;
-    margin: auto;
-
-    /* left: 350px; */
+    width: 250px;
+    margin-left: 20px;
   }
 
   .modal-content {

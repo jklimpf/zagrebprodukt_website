@@ -20,10 +20,6 @@ main {
   padding-top: 90px;
 }
 
-body.modal-open {
-  overflow: hidden;
-}
-
 /* Style header */
 header {
   position: fixed;
