@@ -20,6 +20,10 @@ main {
   padding-top: 90px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 /* Style header */
 header {
   position: fixed;
@@ -100,6 +104,7 @@ footer {
   transition: transform 0.2s, background-color 0.1s ease-in-out;
   text-decoration: none;
   width: 150px;
+  border-radius: 5px;
 }
 
 .button:hover {

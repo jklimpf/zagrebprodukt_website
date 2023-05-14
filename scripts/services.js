@@ -1,6 +1,7 @@
 /* JavaScript code */
 const serviceLinks = document.querySelectorAll(".service-link");
 const modals = document.querySelectorAll(".modal");
+const body = document.querySelector("body");
 
 serviceLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -10,6 +11,7 @@ serviceLinks.forEach((link) => {
       modal.classList.remove("active");
     });
     targetModal.classList.add("active");
+    body.classList.add("modal-open"); // add class to body to disable scrolling
   });
 });
 
@@ -20,6 +22,7 @@ closeModalButtons.forEach((button) => {
     modals.forEach((modal) => {
       modal.classList.remove("active");
     });
+    body.classList.remove("modal-open"); // remove class from body to enable scrolling
   });
 });
 
@@ -27,6 +30,7 @@ closeModalButtons.forEach((button) => {
 document.addEventListener("click", (event) => {
   if (event.target.classList.contains("modal")) {
     event.target.classList.remove("active");
+    body.classList.remove("modal-open"); // remove class from body to enable scrolling
   }
 });
 

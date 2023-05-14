@@ -24,6 +24,7 @@
 .serviceCard img {
   width: 220px;
   height: 130px;
+  border-radius: 10px;
 }
 /* .serviceCard h2 {
   text-decoration: underline;
@@ -119,6 +120,11 @@
   max-width: 600px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.serviceButtonContainer a {
+  text-decoration: none !important;
+  color: black !important;
 }
 
 .close-service-modal {
