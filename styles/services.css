@@ -127,6 +127,10 @@
   color: black !important;
 }
 
+.button-placeholder {
+  width: 150px;
+}
+
 .close-service-modal {
   position: absolute;
   right: 3%;
@@ -151,7 +155,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-height: 90vh;
   position: relative;
   margin: auto;
 }
@@ -164,6 +168,11 @@
   background-color: white;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
+}
+
+.modal-content-images img {
+  max-width: 100%;
+  max-height: 90vh;
 }
 
 /* Make the images invisible by default */
@@ -273,6 +282,40 @@
     width: 170px;
     height: 130px;
   }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 0px 20px 20px;
+    border-radius: 5px;
+    overflow-y: hidden;
+    z-index: 1000;
+    width: 85%;
+    height: 80%;
+  }
+
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-container {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 20px 5px 5px;
+  }
+
+  .modal-content .modal-container img {
+    width: 100%;
+  }
+  .modal-content h2 {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -294,6 +337,40 @@
   .serviceDescription {
     width: 300px;
     margin-left: 230px;
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 0px 20px 20px;
+    border-radius: 5px;
+    overflow-y: hidden;
+    z-index: 1000;
+    width: 85%;
+    height: 80%;
+  }
+
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-container {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 20px 5px 5px;
+  }
+
+  .modal-content .modal-container img {
+    width: 100%;
+  }
+  .modal-content h2 {
+    padding: 0 20px;
   }
 }
 
@@ -337,6 +414,40 @@
   .serviceCard ul p {
     font-size: 11px;
     margin-bottom: 5%;
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 0px 20px 20px;
+    border-radius: 5px;
+    overflow-y: hidden;
+    z-index: 1000;
+    width: 85%;
+    height: 80%;
+  }
+
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-container {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 20px 5px 5px;
+  }
+
+  .modal-content .modal-container img {
+    width: 100%;
+  }
+  .modal-content h2 {
+    padding: 0 20px;
   }
 }
 
@@ -385,6 +496,40 @@
     position: absolute;
     top: 15%;
   }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 0px 20px 20px;
+    border-radius: 5px;
+    overflow-y: hidden;
+    z-index: 1000;
+    width: 85%;
+    height: 80%;
+  }
+
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-container {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 20px 5px 5px;
+  }
+
+  .modal-content .modal-container img {
+    width: 100%;
+  }
+  .modal-content h2 {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -403,13 +548,15 @@
   }
 
   .serviceCard img {
-    display: none;
+    margin-top: 50px;
+    width: 150px;
+    height: 100px;
   }
 
   .serviceTitleContainer {
     width: auto;
     text-align: center;
-    position: relative;
+    position: absolute;
     left: auto;
   }
 
@@ -424,16 +571,17 @@
 
   .serviceButtonContainer {
     flex-direction: row;
+    position: absolute;
+    bottom: 5%;
   }
 
   .serviceCard h2 {
     font-size: 14px;
     text-align: center;
   }
+
   .serviceCard ul {
-    text-align: left;
-    line-height: 0.5;
-    margin-left: 20px;
+    display: none;
   }
   .serviceCard ul li {
     font-size: 11px;
@@ -476,6 +624,14 @@
     height: 90%;
     overflow-y: auto;
     overflow-x: hidden;
+    padding: 0 20px 5px 5px;
+  }
+
+  .modal-content .modal-container img {
+    width: 100%;
+  }
+  .modal-content h2 {
+    padding: 0 20px;
   }
 
   .slideshow-container {

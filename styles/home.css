@@ -1,8 +1,14 @@
 #firstSection {
   background-color: #333;
+}
+
+.contentFirstSection {
   height: auto;
   display: flex;
   justify-content: space-between;
+  max-width: 2000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .homepageTitleContainer {
@@ -21,16 +27,63 @@
 
 .homepageImg {
   width: 60%;
-  border-radius: 0 0 0 300px;
+  border-radius: 0 0 0 50rem;
+  opacity: 0.6;
 }
 
-#secondSection {
+#secondSection,
+#fourthSection {
   background-color: rgba(51, 51, 51, 0.8);
+}
+
+.contentSecondSection,
+.contentFourthSection {
   height: auto;
   padding: 100px 0;
   display: flex;
   justify-content: space-between;
   justify-content: center;
+  max-width: 2000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aboutUsText,
+.companies {
+  width: 60%;
+  margin: auto;
+  line-height: 1.6;
+  text-align: left;
+  color: #fff;
+  padding-right: 100px;
+}
+
+.companies {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.companies .companyDiv {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 170px;
+  height: 70px;
+  font-size: 13px;
+  line-height: 1.2;
+  border-radius: 15px;
+  background-color: rgba(43, 43, 43, 0.8);
+}
+
+.companies .companyDiv h3 {
+  padding: 5px;
+}
+
+.companyDiv:nth-child(even) {
+  background-color: rgba(69, 69, 69, 0.8);
 }
 
 .aboutTitle {
@@ -40,21 +93,18 @@
   font-size: 30px;
 }
 
-.aboutUsText {
-  width: 60%;
-  margin: auto;
-  line-height: 1.6;
-  text-align: left;
-  color: #fff;
-  padding-right: 100px;
-}
-
 #thirdSection {
   background-color: #333;
+}
+
+.contentThirdSection {
   display: flex;
   justify-content: space-between;
   height: auto;
   padding: 100px 0;
+  max-width: 2000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .membershipTitle {
@@ -90,6 +140,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
 }
 
 .membershipCard:nth-child(odd) {
@@ -118,21 +169,153 @@
   .membershipDetailsCardsContainer {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .companies {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 1320px) {
   .membershipDetailsCardsContainer {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .companies {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-width: 840px) {
-  .membershipDetailsCardsContainer {
-    grid-template-columns: repeat(1, 1fr);
+@media (max-width: 910px) {
+  .contentFirstSection {
+    flex-direction: column-reverse;
+    position: relative;
+    height: 50vh;
+    z-index: 0;
+  }
+
+  .contentFirstSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/img/homepage_img.jpg") no-repeat center
+      center/cover;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  .homepageImg {
+    display: none;
+  }
+
+  .homepageTitleContainer {
+    position: absolute;
+    bottom: 50%;
+    left: 30%;
+    z-index: 1000;
+  }
+
+  .homepageTitleContainer h1 {
+    font-size: 50px;
+    z-index: 1000;
+  }
+
+  .contentSecondSection {
+    height: 47vh;
+    flex-direction: column;
+  }
+
+  .aboutUsText {
+    width: 70%;
+    padding-right: 0;
+    font-size: 21px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .aboutTitle {
+    width: 100%;
+    margin: auto;
+  }
+
+  .contentThirdSection {
+    flex-direction: column;
   }
 
   .membershipCard {
     width: 180px;
-    height: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .membershipDetailsCardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .membershipTitle {
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .membershipDetailsContainer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+  }
+
+  .membershipCard h3 {
+    font-size: 15px;
+  }
+
+  .membershipCard ul li {
+    font-size: 11px;
+  }
+
+  .contentFourthSection {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .companies {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .companies .companyDiv {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    font-size: 9px;
+    line-height: 1.2;
+    border-radius: 15px;
+    background-color: rgba(43, 43, 43, 0.8);
+  }
+
+  .companies {
+    width: 100%;
+    margin: auto;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    margin-left: 1%;
+    gap: 10px;
+  }
+
+  .companies h3 {
+    font-size: 12px;
   }
 }
