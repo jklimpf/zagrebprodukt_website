@@ -435,7 +435,6 @@
     text-align: center;
     color: #fff;
     padding: 0;
-    margin-left: 1%;
     gap: 10px;
   }
 
@@ -493,10 +492,12 @@
 
   .membershipDetailsCardsContainer {
     grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    text-align: center;
+    padding-left: 30px;
   }
   .membershipTitle {
     width: 100%;
-    margin: auto;
     color: #fff;
     font-size: 30px;
   }
@@ -525,6 +526,7 @@
   .contentFourthSection {
     flex-direction: column;
     gap: 50px;
+    padding-left: 20px;
   }
 
   .companies {
