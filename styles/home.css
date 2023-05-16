@@ -258,7 +258,6 @@
 
   .membershipDetailsCardsContainer {
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 10%;
   }
   .membershipTitle {
     width: 100%;
@@ -285,7 +284,6 @@
   .membershipText {
     margin-top: 18px;
     text-align: left;
-    margin-left: 10%;
   }
 
   .contentFourthSection {
@@ -457,7 +455,7 @@
   }
 
   .homepageTitleContainer h1 {
-    font-size: 45px;
+    font-size: 50px;
     z-index: 1000;
   }
 
@@ -495,7 +493,6 @@
 
   .membershipDetailsCardsContainer {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 5%;
   }
   .membershipTitle {
     width: 100%;
@@ -509,7 +506,6 @@
     margin: auto;
     text-align: center;
     color: #fff;
-    padding-left: 5%;
   }
 
   .membershipCard h3 {
@@ -540,9 +536,7 @@
     text-align: center;
     color: #fff;
     padding: 0;
-    margin-left: 1%;
     gap: 10px;
-    padding-left: 5%;
   }
 
   .companies .companyDiv {
