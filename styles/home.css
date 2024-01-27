@@ -36,13 +36,29 @@
   }
 }
 
-.christmasMessage {
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
+.anniversaryDiv {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 80px;
-  text-decoration: underline;
-  animation: slideFromAbove 2s ease forwards;
+  padding: 0 40px;
+
+  .anniversaryMessage {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    animation: slideFromAbove 1s ease forwards;
+  }
+
+  .marginBottom {
+    margin-bottom: 20px;
+  }
+
+  .biggerFont {
+    font-size: 25px;
+  }
 }
 
 .homepageImg {
@@ -239,6 +255,19 @@
     z-index: 1000;
   }
 
+  .anniversaryDiv {
+    position: absolute;
+    top: 135%;
+
+    padding: 0 20px;
+    .anniversaryMessage {
+      font-size: 14px;
+    }
+
+    .biggerFont {
+      font-size: 22px;
+    }
+  }
   .homepageTitleContainer h1 {
     font-size: 50px;
     z-index: 1000;
@@ -382,6 +411,19 @@
     flex-direction: column;
   }
 
+  .anniversaryDiv {
+    position: absolute;
+    top: 135%;
+
+    padding: 0 20px;
+    .anniversaryMessage {
+      font-size: 14px;
+    }
+    .biggerFont {
+      font-size: 22px;
+    }
+  }
+
   .membershipCard {
     width: 180px;
     height: 150px;
@@ -466,6 +508,20 @@
 @media (max-width: 500px) {
   .contentFirstSection {
     height: 100vh;
+  }
+
+  .anniversaryDiv {
+    position: absolute;
+    top: 135%;
+
+    padding: 0 20px;
+    .anniversaryMessage {
+      font-size: 14px;
+    }
+
+    .biggerFont {
+      font-size: 22px;
+    }
   }
 
   .homepageTitleContainer {
